@@ -1,14 +1,20 @@
 import bgImg from "../assets/images/bg.jpg";
+import Button from "./Button/Button";
+import Input from "./Input/Input";
+import Circle from "./Circle/Circle";
+import Radio from "./Radio/Radio";
+import Icon from "./Icon/Icon";
+import Divider from "./Divider/Divider";
 
 const App = () => {
     return (
         <div className={"app"}>
-            <h2 className={"app__title"}>
-                App
-            </h2>
-            <div>
-                <img src={bgImg} alt="bg"/>
-            </div>
+            <Button className={"btn"} value={'add'}/>
+            <Input type={"text"} placeholder={"change"}/>
+            <Circle />
+            <Radio />
+            <Icon />
+            <Divider />
         </div>
     );
 };
