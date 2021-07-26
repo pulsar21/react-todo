@@ -1,0 +1,22 @@
+@use "variables";
+@use "fonts";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto sans-serif;
+  font-style: normal;
+  background-color: variables.$red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.app {
+  &__title {
+    color: variables.$green;
+  }
+}
