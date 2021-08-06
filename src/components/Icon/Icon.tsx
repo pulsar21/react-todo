@@ -2,6 +2,9 @@ import {FC} from "react";
 import "../../assets/styles/icon/icon.scss";
 
 interface IIconProps {
+    width?: number;
+    height?: number;
+    src: string;
 }
 
 const Icon: FC<IIconProps> = (props) => {
@@ -10,9 +13,9 @@ const Icon: FC<IIconProps> = (props) => {
     } = props;
 
     return (
-        <div>
+        <svg>
             Icon
-        </div>
+        </svg>
     );
 };
 
